@@ -15,6 +15,8 @@ class Shoe
 
   def brands=(brand)
     @brand=brand
-    BRANDS.include?(brand) ? break:BRANDS<<brand
+    if BRANDS.include?(brand)==false
+       BRANDS<<brand
     end
+  end
 end
